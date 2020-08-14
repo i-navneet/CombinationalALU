@@ -1,0 +1,372 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 16 02:11:17 2019
+# Process ID: 23897
+# Current directory: /home/2018csb1107/project_2/project_2.runs/synth_1
+# Command line: vivado -log testbench.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench.tcl
+# Log file: /home/2018csb1107/project_2/project_2.runs/synth_1/testbench.vds
+# Journal file: /home/2018csb1107/project_2/project_2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source testbench.tcl -notrace
+Command: synth_design -top testbench -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23912 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1488.574 ; gain = 102.598 ; free physical = 842 ; free virtual = 12450
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'testbench' [/home/2018csb1107/project_2/project_2.srcs/sources_1/new/testbench.v:24]
+INFO: [Synth 8-6157] synthesizing module 'controlUnit' [/home/2018csb1107/Documents/controlUnit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'bitwiseAND' [/home/2018csb1107/Documents/bitwiseAND.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bitwiseAND' (1#1) [/home/2018csb1107/Documents/bitwiseAND.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bitwiseOR' [/home/2018csb1107/Documents/bitwiseOR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bitwiseOR' (2#1) [/home/2018csb1107/Documents/bitwiseOR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bitwiseNOT' [/home/2018csb1107/Documents/bitwiseNOT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bitwiseNOT' (3#1) [/home/2018csb1107/Documents/bitwiseNOT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bitwiseXOR' [/home/2018csb1107/Documents/bitwiseXOR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bitwiseXOR' (4#1) [/home/2018csb1107/Documents/bitwiseXOR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fastAdder32bit' [/home/2018csb1107/Documents/fastAdder32bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLA4bit' [/home/2018csb1107/Documents/CLA4bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLA4bit' (5#1) [/home/2018csb1107/Documents/CLA4bit.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'C1' does not match port width (1) of module 'CLA4bit' [/home/2018csb1107/Documents/fastAdder32bit.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'fastAdder32bit' (6#1) [/home/2018csb1107/Documents/fastAdder32bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fastSubtractor' [/home/2018csb1107/Documents/fastSubtractor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fastSubtractor' (7#1) [/home/2018csb1107/Documents/fastSubtractor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'logicalLeftShift' [/home/2018csb1107/Documents/logicalLeftShift.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux32to1' [/home/2018csb1107/Documents/mux32to1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux32to1' (8#1) [/home/2018csb1107/Documents/mux32to1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'logicalLeftShift' (9#1) [/home/2018csb1107/Documents/logicalLeftShift.v:23]
+INFO: [Synth 8-6157] synthesizing module 'logicalRightShift' [/home/2018csb1107/Documents/logicalRightShift.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'logicalRightShift' (10#1) [/home/2018csb1107/Documents/logicalRightShift.v:23]
+INFO: [Synth 8-6157] synthesizing module 'arithmeticRightShift' [/home/2018csb1107/Documents/arithmeticRightShift.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'arithmeticRightShift' (11#1) [/home/2018csb1107/Documents/arithmeticRightShift.v:24]
+INFO: [Synth 8-6157] synthesizing module 'multiplier_32bit' [/home/2018csb1107/Documents/multiplier_32bit.v:24]
+WARNING: [Synth 8-324] index -21 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -20 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -19 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -18 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -17 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -16 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -15 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -14 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -13 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -12 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -11 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -10 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -9 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -8 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -7 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -6 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -5 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -4 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -3 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -2 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+WARNING: [Synth 8-324] index -1 out of range [/home/2018csb1107/Documents/multiplier_32bit.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier_32bit' (12#1) [/home/2018csb1107/Documents/multiplier_32bit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [/home/2018csb1107/Documents/comparator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (13#1) [/home/2018csb1107/Documents/comparator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'controlUnit' (14#1) [/home/2018csb1107/Documents/controlUnit.v:24]
+WARNING: [Synth 8-85] always block has no event control specified [/home/2018csb1107/project_2/project_2.srcs/sources_1/new/testbench.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'testbench' (15#1) [/home/2018csb1107/project_2/project_2.srcs/sources_1/new/testbench.v:24]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1549.293 ; gain = 163.316 ; free physical = 845 ; free virtual = 12454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1567.105 ; gain = 181.129 ; free physical = 850 ; free virtual = 12459
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1575.109 ; gain = 189.133 ; free physical = 849 ; free virtual = 12459
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1594.992 ; gain = 209.016 ; free physical = 762 ; free virtual = 12375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1088  
+	   2 Input      1 Bit         XORs := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module testbench 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+Module CLA4bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 4     
+Module logicalLeftShift 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module logicalRightShift 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu5/genblk1[1].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu5/genblk1[2].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu5/genblk1[3].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu5/genblk1[4].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu5/genblk1[5].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu5/genblk1[6].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu5/genblk1[7].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu6/U2/genblk1[1].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu6/U2/genblk1[2].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu6/U2/genblk1[3].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu6/U2/genblk1[4].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu6/U2/genblk1[5].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu6/U2/genblk1[6].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu6/U2/genblk1[7].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu10/u30/genblk1[1].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu10/u30/genblk1[2].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu10/u30/genblk1[3].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu10/u30/genblk1[4].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu10/u30/genblk1[5].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu10/u30/genblk1[6].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/uu10/u30/genblk1[7].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/A1/U1/U2/genblk1[1].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/A1/U1/U2/genblk1[2].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/A1/U1/U2/genblk1[3].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/A1/U1/U2/genblk1[4].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/A1/U1/U2/genblk1[5].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/A1/U1/U2/genblk1[6].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 1st driver pin 'B1/A1/U1/U2/genblk1[7].O1/C1_inferred/C1' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C1 with 2nd driver pin 'GND' [/home/2018csb1107/Documents/CLA4bit.v:58]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C1 is connected to at least one constant driver which has been preserved, other driver is ignored [/home/2018csb1107/Documents/CLA4bit.v:58]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 674 ; free virtual = 12290
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 673 ; free virtual = 12289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 673 ; free virtual = 12288
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 673 ; free virtual = 12288
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 673 ; free virtual = 12288
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 673 ; free virtual = 12288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 673 ; free virtual = 12288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 673 ; free virtual = 12288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 673 ; free virtual = 12288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 673 ; free virtual = 12288
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 84 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.398 ; gain = 290.422 ; free physical = 673 ; free virtual = 12288
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.406 ; gain = 290.422 ; free physical = 673 ; free virtual = 12288
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1756.023 ; gain = 0.000 ; free physical = 592 ; free virtual = 12208
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 23 Warnings, 84 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1756.023 ; gain = 370.168 ; free physical = 692 ; free virtual = 12308
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1756.023 ; gain = 0.000 ; free physical = 692 ; free virtual = 12308
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/2018csb1107/project_2/project_2.runs/synth_1/testbench.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file testbench_utilization_synth.rpt -pb testbench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 16 02:11:31 2019...
+
